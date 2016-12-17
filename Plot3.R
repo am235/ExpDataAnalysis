@@ -32,7 +32,7 @@ lines(energy_data_subset$timeDt, energy_data_subset$Sub_metering_2, type="l", co
 #Adding lines for 3rd submeter
 lines(energy_data_subset$timeDt, energy_data_subset$Sub_metering_3, type="l", col="blue",xaxt="n",yaxt="n")
 
-legend("topright", c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty=1, lwd=2.5, col=c("black", "red", "blue"))
+legend("top", c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), text.font=0, lty=1:3, col=c("black", "red", "blue"))
 
 
 ##Adding to output PNG file
